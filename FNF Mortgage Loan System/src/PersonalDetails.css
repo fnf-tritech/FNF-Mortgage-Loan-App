@@ -1,0 +1,61 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #37cd6b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  label {
+    font-size: 16px;
+  }
+}
+
+/* Notifications */
+.success-notification {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: rgb(31, 130, 139);
+  margin-bottom: 10px;
+}
+
+.failure-notification {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f44336;
+  color: rgb(14, 20, 53);
+  margin-bottom: 10px;
+}

@@ -1,0 +1,257 @@
+/* Add Bootstrap CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom CSS */
+body {
+  background-color: #f0f5f9;
+  /* Light blue background color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  /* White background color */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  /* Box shadow for a subtle effect */
+}
+
+h1 {
+  color: #24415b;
+  /* Dark blue heading color */
+}
+
+.App-header {
+  background-color: #b3b9c1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo {
+  height: 10rem;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling the header element */
+.header {
+  background-image: url("./banner.jpg");
+  /* Rest of the CSS properties */
+  background-size: cover;
+  /* Covering the whole element with the image */
+  background-position: center;
+  /* Centering the image */
+  height: 100px;
+  /* Setting a fixed height for the element */
+  display: flex;
+  /* Using flexbox to align the content */
+  align-items: center;
+  /* Aligning the content vertically */
+  justify-content: center;
+  /* Aligning the content horizontally */
+}
+
+/* Styling the h1 element inside the header element */
+.header h1 {
+  color: blue;
+  /* Setting the text color to blue */
+  font-size: 40px;
+  /* Setting the font size to 40px */
+  text-shadow: 2px 2px white;
+  /* Adding a white shadow to the text */
+}
+
+/* Styling the sections element */
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Styling the section element */
+.section {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--theme-color);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 80px;
+}
+
+/* Adding hover effect to the section element */
+.section:hover {
+  background-color: var(--theme-color);
+  color: white;
+}
+
+.loan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 12px;
+}
+
+.form-links {
+  width: 25%;
+}
+
+.form-links-header {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.form-links-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-links-list li {
+  margin-bottom: 0.5rem;
+}
+
+.form-links-list li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.loan-details {
+  width: 70%;
+}
+
+.loan-details h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.loan-details p {
+  margin-bottom: 12px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .main {
+    padding: 10px;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .sections {
+    margin: 10px;
+  }
+
+  .section {
+    width: 150px;
+    height: 80px;
+    margin: 5px;
+    padding: 5px;
+    line-height: 60px;
+  }
+
+  .loan-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-links,
+  .loan-details {
+    width: 100%;
+  }
+}
+
+/* Tablets and small desktop screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main {
+    padding: 15px;
+  }
+
+  .header {
+    height: 150px;
+  }
+
+  .header h1 {
+    font-size: 36px;
+  }
+
+  .sections {
+    margin: 15px;
+  }
+
+  .section {
+    width: 180px;
+    height: 90px;
+    margin: 7.5px;
+    padding: 7.5px;
+    line-height: 70px;
+  }
+
+  .loan-details {
+    width: 60%;
+  }
+}
+
+/* Large desktop screens and above */
+@media (min-width: 1024px) {
+  .header {
+    height: 200px;
+  }
+
+  .header h1 {
+    font-size: 48px;
+  }
+
+  .sections {
+    margin: 30px;
+  }
+
+  .section {
+    width: 220px;
+    height: 110px;
+    margin: 15px;
+    padding: 15px;
+    line-height: 90px;
+  }
+}

@@ -1,0 +1,58 @@
+/* Import a custom font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+/* Set the font family and size for the whole document */
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+
+/* Style the form element with a border and a box shadow */
+form {
+  padding:20px;
+  border: 1.5px solid #5599ee;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+/* Add some space between the label and input elements */
+label {
+  padding-top:20px ;
+  padding-left: 10px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Style the input elements with a border and some padding */
+input {
+  border: 1px solid #66aaff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
+/* Change the appearance of the input elements when they are focused */
+input:focus {
+  outline: none;
+  border-color: #66aaff;
+}
+
+/* Style the submit button with a background color and some hover effects */
+button {
+  background-color: #66aaff;
+  color: rgb(25, 25, 172);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5599ee;
+}
+
+button:focus {
+  outline: none;
+}

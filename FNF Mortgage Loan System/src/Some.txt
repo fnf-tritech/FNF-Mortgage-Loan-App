@@ -1,0 +1,51 @@
+//
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: -200px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.columns {
+  flex: 1;
+}
+
+table {
+  position: relative;
+  margin-top: -20px;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+
+.container {
+   display: flex; 
+   justify-content: flex-start;
+   top: 0px;
+   margin-left: 10px;
+   } 
+   
+
+
+
+.App {
+  position: relative;
+}
+
+ */
+
+.slider{
+    float:left; 
+    width: 33%;
+    background-color: white;
+}
+
+.Emi{
+    float:left;
+    width: 33%;
+} 

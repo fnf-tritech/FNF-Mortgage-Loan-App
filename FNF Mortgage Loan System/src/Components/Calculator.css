@@ -1,0 +1,42 @@
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.slider {
+    position: relative;
+    top: 410px;
+    margin-left: 150px;
+}
+
+div.slider {
+    position: absolute;
+    left: 0;
+    top: -200;
+}
+button.right {
+    float: right;
+}
+.slider {
+    float: left;
+    width: 33%;
+    background-color: white;
+}
+
+.Emi {
+    float: left;
+    width: 33%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.columns {
+    flex: 1;
+}

@@ -1,0 +1,26 @@
+.tkt ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    background-color: #4f5dc6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tkt ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tkt ul li {
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .tkt ul li {
+        flex: 1 1 100%;
+    }
+}

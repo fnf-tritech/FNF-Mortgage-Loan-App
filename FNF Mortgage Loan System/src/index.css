@@ -1,0 +1,167 @@
+/* Importing bootstrap from CDN */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Using blue color as a theme */
+:root {
+  --theme-color: #007bff;
+}
+
+/* Styling the nav element */
+nav {
+  background-color: var(--theme-color);
+  padding: 10px;
+}
+
+/* Styling the ul element inside the nav element */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the li element inside the ul element */
+nav ul li {
+  margin-right: 20px;
+}
+
+/* Styling the a element inside the li element */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Styling the h1 element */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling the p element */
+p {
+  text-align: center;
+}
+
+/* Styling the button element */
+button {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Styling the form element */
+form {
+  width: 50%;
+  margin: 20px auto;
+}
+
+/* Styling the input element inside the form element */
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.loan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 12px;
+}
+
+.form-links {
+  width: 25%;
+}
+
+.form-links-header {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.form-links-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-links-list li {
+  margin-bottom: 0.5rem;
+}
+
+.form-links-list li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.loan-details {
+  width: 70%;
+}
+
+.loan-details h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.loan-details p {
+  margin-bottom: 12px;
+}
+
+h3 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+
+  /* Adjust the form width */
+  form {
+    width: 90%;
+  }
+
+  /* Adjust the loan-container padding */
+  .loan-container {
+    padding: 8px;
+  }
+
+  /* Adjust the form-links width */
+  .form-links {
+    width: 100%;
+  }
+
+  /* Adjust the loan-details width */
+  .loan-details {
+    width: 100%;
+  }
+}
+
+/* Tablets and small desktop screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* Adjust the form width */
+  form {
+    width: 70%;
+  }
+}
+
+/* Large desktop screens and above */
+@media (min-width: 1024px) {
+
+  /* Adjust the form width */
+  form {
+    width: 60%;
+  }
+}

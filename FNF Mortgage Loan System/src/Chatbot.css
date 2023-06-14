@@ -1,0 +1,98 @@
+.chatbot-container {
+  width: 80%;
+  height: 80vh;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+.conversation-container {
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+.input-container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.input-container form {
+  width: 100%;
+}
+
+.input-container input {
+  width: calc(100% - 120px);
+  height: 40px;
+  border: none;
+  padding: 10px;
+}
+
+.input-container button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+}
+
+.message {
+  max-width: 60%;
+  margin: 10px;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message-bubble {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.user-message {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-message .message-bubble {
+  background-color: #e9ecef;
+}
+
+.bot-message {
+  display: flex;
+}
+
+.bot-message .message-bubble {
+  background-color: #fff;
+}
+
+.loading-indicator {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+  .chatbot-container {
+    width: 90%;
+  }
+}
+
+/* Tablets and small desktop screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .chatbot-container {
+    width: 70%;
+  }
+}
+
+/* Large desktop screens and above */
+@media (min-width: 1024px) {
+  .chatbot-container {
+    width: 60%;
+  }
+}
